@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        let a=69;
+        let b='This is me';
+        console.log(a);
+        console.log(b);
+        const c=8;
+        
+        //numbers
+        //strings
+        //boolean
+        //objects
+
+        function hello(){
+            console.log("Hey Pratham");
+        }
+        let obj= {
+            m: 9,
+            r: 6,
+            func: function myfunc(number) {
+                console.log("This is my number" + number);
+            }
+        }
+        document.addEventListener("click", function click()
+        {
+            console.log("clicked");
+            // alert("hello")
+            let conf=confirm("Are you sure");
+            console.log(conf);
+        })
+        let arr=[22,33,44];
+        console.log(this);
+        //for (len index=0; index<arr.length; index++)
+        //{
+          // const elem=arr[index];
+        //}
+        let myobj={
+           d: this, 
+           myfunc1 : function (number){
+            console.log(this);
+           }
+        } 
+        myobj.myfunc1();
+        console.log(myobj.d);
+        setTimeout(()=>{
+            console.log("yayyy");
+        },9000)
+        console.log("9 seconds completed");
+
+        arr.forEach(element => {
+ 
+        }
+        )
+    </script>
+    <h1>I am revising javascript.</h1>
+</body>
+</html>
